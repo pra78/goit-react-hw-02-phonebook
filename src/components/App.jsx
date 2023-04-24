@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import { Component } from "react";
 import { nanoid } from 'nanoid';
 import { ContactForm, ContactList, Filter } from "components";
 
