@@ -20,6 +20,7 @@ const ContactList = ({ contacts, onDeleteContact }) => {
 }
 
 ContactList.propTypes = {
+    onDeleteContact: PropTypes.func.isRequired,
     contacts: PropTypes.arrayOf(PropTypes.exact({
         name: PropTypes.string.isRequired,
         number: PropTypes.string.isRequired,
