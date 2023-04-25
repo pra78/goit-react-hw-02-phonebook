@@ -18,7 +18,7 @@ export class App extends Component {
       return alert(`${name} is already in contacts`);
     }
     
-    this.setState(({ contacts }) => ({ contacts: [{ name: name, number: number, id: nanoid() }, ...contacts] }))
+    this.setState(({ contacts }) => ({ contacts: [{ name, number, id: nanoid() }, ...contacts] }))
   }
 
   handleFilterChange = event => {
